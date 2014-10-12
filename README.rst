@@ -24,13 +24,13 @@ Usage
      git clone https://github.com/philsc/docker-tmux-guest.git
      cd docker-tmux-guest
 
-1. Build docker image
+2. Build docker image
 
    .. code:: sh
 
      docker build -t tmux-guest:latest .
 
-1. Run the helper script to start up tmux, docker and connect the two together.
+3. Run the helper script to start up tmux, docker and connect the two together.
 
    .. code:: sh
 
@@ -39,7 +39,7 @@ Usage
    The helper script will print a bunch of information that you can use to 
    share the tmux session with others.
 
-1. Attach to the tmux session with the socket that was printed in the helper 
+4. Attach to the tmux session with the socket that was printed in the helper 
    script. For example, if the helper script says that the tmux socket is 
    located at ``/tmp/tmp.abcdef/tmux-guest-port-999`` then you can attach to 
    the session like so:
@@ -48,7 +48,7 @@ Usage
 
      tmux -S /tmp/tmp.abcdef/tmux-guest-port-999 attach
 
-1. Have others join your session by SSHing into the specified port as the 
+5. Have others join your session by SSHing into the specified port as the 
    ``guest`` user.
 
    .. code:: sh
@@ -57,7 +57,7 @@ Usage
 
    where you replace ``IPADDRESS`` above with the IP address of your machine.
 
-1. When you're done sharing the screen, simply disconnect from tmux and run the 
+6. When you're done sharing the screen, simply disconnect from tmux and run the 
    following command to kill the docker instance:
 
    .. code:: sh
