@@ -59,7 +59,7 @@ TCPKeepAlive yes
 AllowTcpForwarding no
 #UseLogin no
 
-UsePAM yes
+UsePAM no
 
 # Allow only the guest user to log in
 AllowUsers guest

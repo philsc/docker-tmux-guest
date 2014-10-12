@@ -14,7 +14,6 @@ RUN passwd -d guest
 RUN mkdir -p /var/run/sshd
 ADD sshd_config /etc/ssh/sshd_config
 ADD guest-login /usr/bin/guest-login
-
 RUN chmod +x /usr/bin/guest-login
 
 CMD ["/usr/sbin/sshd", "-D"]
