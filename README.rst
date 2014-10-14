@@ -68,8 +68,11 @@ Usage
    files it had created.
 
 
-Issues
-======
+Issues/Restrictions
+===================
+
+- This will only work on a Linux system with a sufficiently recent kernel. This 
+  is inherent to using docker.
 
 - The read-only guest sessions still have the authority to resize the tmux 
   window. This is kind of annoying if you, the presenter, want to work with a 
