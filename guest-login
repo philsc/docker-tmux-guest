@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-exec /usr/local/bin/tmux -S /var/lib/tmux-sessions/guest attach -r
+exec /usr/local/bin/tmux -S /var/lib/tmux-sessions/guest -2 attach -r
